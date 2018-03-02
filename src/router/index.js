@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import index from '@/views/index/index'
-import order from '@/views/order/order'
 
 Vue.use(Router)
 
@@ -10,12 +8,16 @@ export default new Router({
     {
       path: '/',
       name: 'index',
-      component: index
+      component(resolve){
+        require(['@/views/index/index'], resolve)
+      }
     },
     {
       path: '/order',
       name: 'order',
-      component: order
+      component(resolve){
+        require(['@/views/order/order'], resolve)
+      }
     }
   ]
 })

@@ -6,6 +6,7 @@ import mutations from './mutations'
 
 Vue.use(Vuex)
 
+
 const state = {
     packageSexType: 'male',
     firstTime: true,
@@ -17,6 +18,3 @@ export default new Vuex.Store({
     getters,
     mutations
 })
-
-
-

@@ -3,10 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import MintUi from 'mint-ui'
 
-import './assets/css/common.css'
-import './assets/css/reset.css'
-import '../node_modules/mint-ui/lib/style.css'
+import store from './store/'
+
+import { Picker } from 'mint-ui'
+
+Vue.use(MintUi);
+Vue.component(Picker.name,Picker);
+
 
 Vue.config.productionTip = false
 
@@ -14,6 +19,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
-  components: { App },
-  template: '<App/>'
+  store,
+  template: '<App/>',
+  components: { App }
 })

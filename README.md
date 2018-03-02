@@ -1,4 +1,4 @@
-# y
+# optional-package
 
 > A Vue.js project
 

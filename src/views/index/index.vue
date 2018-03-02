@@ -44,7 +44,7 @@
                         <img src="/static/img/checkbox.png" alt="" v-if="childrenType.chooseAll">
                     </i>
                 </div>
-                <div class="right_nav_item" v-for='item of childrenType.itemList' :key='item.id'>
+                <div class="right_nav_item" v-for='(item, index) of childrenType.itemList' :key='item.id'>
                     <p>
                         <span class="title">{{item.name}}</span>
                         <span class="money">￥{{item.money}}</span>
