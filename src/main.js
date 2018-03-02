@@ -4,6 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import './assets/css/common.css'
+import './assets/css/reset.css'
+import '../node_modules/mint-ui/lib/style.css'
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

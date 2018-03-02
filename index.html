@@ -2,11 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>y</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>壹基因商城</title>
+    <link rel="stylesheet" href="src/assets/css/common.css">
+    <link rel="stylesheet" href="node_modules/mint-ui/lib/style.css">
+    <link rel="stylesheet" href="src/assets/css/reset.css">
   </head>
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+
+    <script>
+      //rem 样式适应
+      window.onload=function(){
+        var t;
+        w();
+        window.addEventListener("resize", function() {
+          clearTimeout(t);
+          t = setTimeout(w, 300)
+        }, false);
+      }
+      function w() {
+        var r = document.documentElement;
+        var a = r.getBoundingClientRect().width;
+        if (a > 750 ){
+          a = 750;
+        }
+        //750/w = 100/font-size
+        rem = a / 7.5;
+        r.style.fontSize = rem + "px"
+      }
+    </script>
   </body>
 </html>

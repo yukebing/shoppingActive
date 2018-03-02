@@ -1,0 +1,65 @@
+ .wrap .weui-cell{
+    padding: 0 0.41rem;
+    margin-top: 0; 
+    line-height: 0.86rem;
+    font-size: 0.32rem;
+    color: #707070;
+    width: 100%;
+    height: 0.86rem;
+    border-bottom: 1px solid #eee;
+}
+.wrap .weui-cells{
+    margin-top: 0; 
+}
+.wrap .weui-cells>.weui-cell .weui-cell__hd>img{
+    margin-top: 0.2rem;
+    margin-right: 0.24rem;
+    height: 0.45rem;
+    width: 0.45rem;
+}
+.weui-cells_radio img{
+    margin-top: 0.12rem;
+    margin-right: 0.20rem;
+    height: 0.6rem;
+    width: 0.6rem;
+    float: left;
+}
+.weui-cells_radio span{
+    font-size: 0.32rem;
+    color: #000;
+}
+.wrap .vux-tap-active{
+    color: #000;
+}
+.wrap .vux-cell-box:before{
+    border: 0px solid black;
+    width: 50%;
+}
+.wrap .weui-cell:before{
+    border: none;
+}
+.wrap .receipt .weui-cell{
+    border: none;
+}
+.wrap .receipt .vux-cell-value{
+    height: 0.7rem;
+    float: left;
+    font-size: 0.28rem;
+    margin-top: 0.05rem;
+    color: #000;
+    line-height: 0.7rem;
+}
+.wrap .receipt .weui-label{
+    width: 1.32rem !important;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin-right: 0.12rem;
+    font-size: 0.3rem;
+    float: left;
+}
+.v-transfer-dom .vux-popup-header-right{
+    color: #707070;
+}
+.wrap .weui-cells_radio .weui-check:checked + .weui-icon-checked:before{
+    color: #2488ed;
+}
